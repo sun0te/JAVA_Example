@@ -15,8 +15,8 @@ public class ArrayInArrayExample {
 		
 		// 계단식 구조 다차원 배열
 		int[][] englishScores = new int[2][];
-		englishScores[0] = new int[2];
-		englishScores[1] = new int[3];
+		englishScores[0] = new int[2];	//0 배열의 길이 2개
+		englishScores[1] = new int[3];	//1 배열의 길이 3개
 		
 		for(int i = 0; i < englishScores.length; i++) {
 			for(int k = 0; k < englishScores[i].length; k++) {
