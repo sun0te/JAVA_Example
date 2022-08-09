@@ -31,26 +31,24 @@ public class Exercise09 {
 				
 			} else if(selectNo == 2) {
 				//작성 위치
-				
-				for(int i = 0; i < studentNum; i++) {
+				for(int i = 0; i <studentNum; i++) {
 					System.out.println("scores["+i+"] > ");
 					scores[i] = scanner.nextInt();
-					
 				}
 				
 			} else if(selectNo == 3) {
 				//작성 위치
-				for(int i = 0; i < studentNum; i++) {
-				System.out.println("scores["+i+"] : "+scores[i]);
+				for(int i = 0; i<studentNum; i++) {
+					System.out.println("scores["+i+"] "+scores[i]);
 				}
 				
 			} else if(selectNo == 4) {
 				//작성 위치
 				int max = 0;
 				int sum = 0;
-				double avg = 0.0;
+				double avg = 0;
 				
-				for(int i = 0; i < studentNum; i++) {
+				for(int i=0; i<studentNum; i++) {
 					if(scores[i] > max) {
 						max = scores[i];
 					}
@@ -59,8 +57,8 @@ public class Exercise09 {
 				
 				avg = (double)sum / studentNum;
 				
-				System.out.println("최고 점수 : "+max);
-				System.out.println("평균 점수 : "+avg);
+				System.out.println("최고 점수 : "+ max);
+				System.out.println("평균 점수 : "+ avg);
 				
 				
 			} else if(selectNo == 5) {

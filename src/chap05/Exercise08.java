@@ -27,7 +27,7 @@ public class Exercise08 {
 		
 		
 		avg = (double)sum / cnt;
-		
+		//
 		
 		System.out.println("sum : "+sum);
 		System.out.println("avg : "+avg);
