@@ -1,4 +1,4 @@
-package chap06;
+package chap06;	//Annotation 실행파일
 
 import java.lang.reflect.Method;
 
