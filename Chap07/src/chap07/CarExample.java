@@ -10,7 +10,7 @@ public class CarExample {
 		for(int i = 1; i <= 5; i++) {
 			int problemLotation = car.run();
 			
-			switch(problemLotation) {
+			/* switch(problemLotation) {
 				case 1:
 					System.out.println("앞왼쪽 HankookTire 교체");
 					car.frontLeftTire = new HankookTire("앞왼쪽", 15);
@@ -29,7 +29,15 @@ public class CarExample {
 				case 4:
 					System.out.println("뒤오른쪽 KumhoTire 교체");
 					car.backRightTire = new KumhoTire("뒤오른쪽", 13);
-					break;
+					break; 
+			*/
+			
+			//Car 클래스 필드를 배열로 수정_319p
+			if(problemLotation != 0) {
+				System.out.println(car.tires[problemLotation-1].location + " HnakookTire 교체");
+				car.tires[problemLotation-1] = new HankookTire(car.tires[problemLotation-1].location, 15);
+			
+			
 			}
 			
 			System.out.println("------------------------------------------");
